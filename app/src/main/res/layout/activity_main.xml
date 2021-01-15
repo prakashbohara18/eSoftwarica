@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:fillViewport="true"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:background="#3F51B5"
+        android:padding="50sp"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:autoSizeMaxTextSize="50sp"
+            android:text="eSoftwarica"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:autoSizeTextType="uniform"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_marginTop="30sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Username">
+
+            <EditText
+                android:textColor="#fff"
+                android:textCursorDrawable="@null"
+                android:id="@+id/etusername"
+                android:inputType="text"
+                android:autofillHints="Enter username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_marginTop="20sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password">
+
+            <EditText
+                android:textColor="#fff"
+                android:inputType="textPassword"
+                android:textCursorDrawable="@null"
+                android:id="@+id/etpassword"
+                android:autofillHints="Enter password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/btnlogin"
+            android:text="Sign In"
+            android:textColor="#fff"
+            android:backgroundTint="#009688"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center"
+            android:paddingLeft="25sp"
+            android:paddingRight="25sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+</ScrollView>

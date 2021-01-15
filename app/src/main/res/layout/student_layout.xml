@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/light"
+    android:padding="20sp"
+    android:layout_marginBottom="10sp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <ImageView
+        android:id="@+id/studentimage"
+        android:src="@android:drawable/btn_plus"
+        android:layout_width="70dp"
+        android:layout_height="60dp"/>
+
+    <TextView
+        android:layout_marginLeft="20sp"
+        android:id="@+id/tvfullname"
+        android:layout_toEndOf="@id/studentimage"
+        android:text="Student name"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/studentimage" />
+
+
+    <TextView
+        android:layout_marginLeft="20sp"
+        android:id="@+id/tvage"
+        android:layout_toEndOf="@id/studentimage"
+        android:layout_below="@id/tvfullname"
+        android:text="Student age"
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/studentimage" />
+
+
+    <TextView
+        android:layout_marginLeft="20sp"
+        android:id="@+id/tvaddress"
+        android:layout_toEndOf="@id/studentimage"
+        android:layout_below="@id/tvage"
+        android:text="Student address"
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/studentimage" />
+
+
+    <TextView
+        android:id="@+id/tvgender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvaddress"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:text="gender"
+        android:textSize="16sp" />
+
+
+
+    <ImageButton
+        android:id="@+id/Ibtndelete"
+        android:src="@drawable/ic_delete"
+        android:layout_alignParentEnd="true"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentRight="true" />
+
+</RelativeLayout>
